@@ -1,0 +1,43 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    background-color: white;
+    padding: 20px 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    border-radius: 5px;
+
+
+
+    p {
+        text-align: center;
+        color: darkgray;
+        text-decoration: underline;
+    }
+
+    .card-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 100px;
+        background-color: lightgray;
+        box-sizing: border-box;
+        border-radius: 50%;
+        padding: 10px;
+        transition: 0.5s;
+    }
+
+    :hover {
+        background-color: black;
+        color: white;
+
+    }
+
+    svg {
+        fill: currentColor;
+
+    }
+
+}

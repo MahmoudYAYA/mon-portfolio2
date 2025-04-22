@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(199, 199, 209);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: hsl(242, 38%, 75%);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin: auto;
+    list-style: none;
+    
+}   

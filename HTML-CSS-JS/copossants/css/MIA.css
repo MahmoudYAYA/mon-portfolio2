@@ -1,0 +1,25 @@
+.button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+
+
+
+
+}
+
+.p {
+    background-color: #1c87c9;
+}
+
+.list {
+
+    margin: 10px;
+    height: 0%;
+}
+
+.important {
+    color: pink;
+    font-weight: red;
+}

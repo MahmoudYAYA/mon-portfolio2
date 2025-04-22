@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    background-color: lightgray;
+
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 100%;
+    }
+}
+
+.h1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}

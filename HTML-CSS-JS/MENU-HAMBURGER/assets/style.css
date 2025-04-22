@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+  text-align: center;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* === Accueil === */
+#accueil {
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  color: white;
+}
+
+#accueil img {
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+/* === À propos === */
+#a-propos {
+  background: #f4f4f9;
+}
+
+/* === Projets === */
+.projet {
+  margin: 20px 0;
+}
+
+.projet img {
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.projet img:hover {
+  transform: scale(1.05);
+}
+
+/* === Contact === */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+input,
+textarea,
+button {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: #4e54c8;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #8f94fb;
+}
+
+/* === MENU HAMBURGER === */  

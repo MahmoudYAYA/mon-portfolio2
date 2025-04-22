@@ -1,0 +1,58 @@
+@import url(bottons.css);
+
+:root {
+    --color-primary: navy;
+    --color-secondery: pink;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+html {
+    font-size: 16px;
+}
+
+body {
+    min-height: 100vh;
+}
+
+h1 {
+    color: navy;
+    font-size: 2rem;
+}
+
+d h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    color: blue;
+}
+
+a[href^="http"]::after {
+    content: "s";
+}
+
+.container {
+    width: 800px margin: 0 auto;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+    background-color: navy;
+    text-decoration: none;
+    color: white;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.btn:hover {
+    background-color: white;
+    color: var(--main-bg-color);
+}

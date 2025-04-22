@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les formulaires</title>
+
+</head>
+
+<body>
+    <form>
+        <label for="prenom">Prenom*</label>
+        <input type="text" id="Prenom" name="firsname" placeholder="Prenom" required>
+        <!-- required oulige un utilisateur de remplier des champs à remplier obligatoirement  -->
+        <label for="Nom">Nom*</label>
+        <input type="text" id="Nom" name="lasname" placeholder="Nom" required>
+        <label for="tialle">taille</label>
+        <input type="number" name="taille" id="height" placeholder="taille" min="0" max="3" step="0.1">
+        <label for="date_naissance">date de naissance</label>
+        <input type="date" name="date_naissance">
+        <input type="color" name="id">
+        <fieldset>
+            <legend>Vous loisirs</legend>
+            <label for="bike">Vélo</label>
+            <input type="checkbox" id="bike" value="bike" name="hobbies[]">
+            <label for="Cenima">Cénima</label>
+            <input type="checkbox" id="Cenima" value="Cenima" name="hobbies[]">
+            <label for="Manger">Manger</label>
+            <input type="checkbox" id="Manger" value="Manger" name="hobbies[]">
+        </fieldset>
+
+        <fieldset>
+            <legend>Genre</legend>
+            <label for="male">Homme</label>
+            <input type="radio" id="male" value="male" name="gender" checked>
+            <label for="female">Femme</label>
+            <input type="radio" id="female" value="female" name="gender">
+        </fieldset>
+
+        <label for="Languages">Languages</label>
+        <select name="Languages" id="Languages" multiple>
+            <option value="csharp">c#</option>
+            <option value="html">html</option>
+            <option value="css">css</option>
+            <option value="php">php</option>
+        </select>
+
+        <textarea name="bio" id="boi" placeholder="votre bio" rows="10" cols="20"></textarea>
+        <input type="submit" value="Enregistrer">
+
+    </form>
+</body>
+
+</html>

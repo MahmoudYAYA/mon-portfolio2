@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: wheat;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+     
+.title  {
+   color: blue;
+    
+}
+header h1 {
+    margin-bottom: 0.5rem;
+    
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 38, 255);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #b53131;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+
+}
+
+section h2 {
+    margin-bottom: 1REM;
+    color: #333;
+}
+
+.project {
+    margin: 1rem auto;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background: #333;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+form button {
+    background: #f39c12;
+
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+
+}
+
+.logo {
+    width: 1px;
+    height: auto;
+    margin: 1rem;
+    vertical-align: middle;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    color: #333;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #f39c12;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+
+    }
+
+    form {
+        width: 90%;
+    }
+}
+
+body.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+body.dark-mode {
+    background-color: #1c1c1e;
+    color: #fefefe;
+    margin: 10px;
+    padding: auto;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    border-radius: 4px; 
+    color: blue;
+    border-color: black;
+    margin: 10px;
+    padding: 10px;
+    position:absolute;
+    right: 0;
+
+}

@@ -1,0 +1,83 @@
+    :root {
+        /* commande de transition*/
+        interpolate-size: allow-keywords;
+    }
+
+    .site-header {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        background-color: white;
+        padding: 0.5rem 0;
+    }
+
+    .site-header>.container { 
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .site-header .custom-logo {
+        max-width: 200px;
+        max-height: 100px;
+    }
+
+    .site-header .menu {
+        display: flex;
+        gap: 2rem;
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+
+    }
+
+    .site-header .menu a {
+        color: black;
+        text-decoration: none;
+        position: relative;
+
+    }
+
+    .site-header .menu a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 3px;
+        margin-top: -2px;
+        background-color: red;
+        transition: 0.5s;
+
+    }
+
+    .site-header .menu .current-menu-item a::after,
+    .site-header .menu a:hover::after {
+        width: 100%;
+    }
+
+    .site-header .menu .sub-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin: 5px;
+        max-width: 50%;
+        margin-top: 22px;
+        list-style-type: none;
+        position: absolute;
+        padding: 0 0.5rem;
+        background-color: white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        overflow: hidden;
+        height: 0;
+        transition: 0.5s;
+
+
+    }
+
+
+    .site-header .menu li:hover .sub-menu {
+        height: auto;
+        padding: 0.5rem;
+    }
